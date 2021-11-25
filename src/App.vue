@@ -21,6 +21,9 @@ export default {
 .quote_button {
   background-color: #fed23f;
   color: #bcbcbc;
+}
+
+.button_size {
   padding: 5px 30px;
 }
 </style>

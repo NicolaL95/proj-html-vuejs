@@ -6,7 +6,8 @@
         d-flex d-flex
         justify-content-between
         align-items-center
-        pb-4
+        pb-3
+        pt-3
       "
     >
       <img
@@ -26,7 +27,7 @@
         <a href="">SERVICES</a>
         <a href="">WORK</a>
         <a href="">ARTICLES</a>
-        <button class="border-0 quote_button">GET QUOTE</button>
+        <button class="border-0 quote_button button_size">GET QUOTE</button>
       </nav>
     </div>
   </div>
@@ -41,7 +42,7 @@ export default {};
   .header_flex {
     padding: 0 100px;
     img {
-      height: 70px;
+      height: 65px;
     }
     .header_navigator {
       width: 33%;
