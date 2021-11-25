@@ -6,6 +6,7 @@
         d-flex d-flex
         justify-content-between
         align-items-center
+        pb-4
       "
     >
       <img
@@ -25,7 +26,7 @@
         <a href="">SERVICES</a>
         <a href="">WORK</a>
         <a href="">ARTICLES</a>
-        <button class="border-0">GET QUOTE</button>
+        <button class="border-0 quote_button">GET QUOTE</button>
       </nav>
     </div>
   </div>
@@ -47,11 +48,6 @@ export default {};
       a {
         text-decoration: none;
         color: #bcbcbc;
-      }
-      button {
-        background-color: #fed23f;
-        color: #bcbcbc;
-        padding: 5px 30px;
       }
     }
   }

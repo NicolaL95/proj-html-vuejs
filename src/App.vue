@@ -1,18 +1,26 @@
 <template>
   <div id="app">
     <Header></Header>
+    <Main></Main>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
 export default {
   name: "App",
   components: {
     Header,
+    Main,
   },
 };
 </script>
 
 <style lang="scss">
+.quote_button {
+  background-color: #fed23f;
+  color: #bcbcbc;
+  padding: 5px 30px;
+}
 </style>
