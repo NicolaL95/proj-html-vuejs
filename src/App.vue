@@ -19,6 +19,9 @@ export default {
 
 <style lang="scss">
 /* BUTTONS */
+#app {
+  font-family: "Montserrat", sans-serif;
+}
 .quote_button {
   background-color: #fed23f;
   color: #6b6868;

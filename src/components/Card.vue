@@ -2,17 +2,17 @@
   <div id="card_component">
     <div class="container">
       <div class="row">
-        <div
-          class="card_container text-center col-3 lg_text bc_bg"
-          v-for="(card, index) in cardGenerator"
-          :key="index"
-        >
-          <i :class="cardGenerator[index].icon"></i>
-          <p>{{ cardGenerator[index].name }}</p>
-          <p class="">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ratione
-            amet aspernatur dolore. Quibusdam, fugiat.
-          </p>
+        <div class="col-3" v-for="(card, index) in cardGenerator" :key="index">
+          <div class="card_container text-center lg_text bc_bg">
+            <div class="icon_b">
+              <i :class="cardGenerator[index].icon"></i>
+            </div>
+            <h4 class="mt-2">{{ cardGenerator[index].name }}</h4>
+            <p class="m-0">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+              ratione amet aspernatur dolore. Quibusdam, fugiat.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -25,7 +25,7 @@ export default {
     return {
       cardGenerator: [
         {
-          icon: "fas fa-building",
+          icon: "far fa-building i_c",
           name: "Buildings",
         },
         { icon: "fas fa-sync-alt", name: "Renovate" },
@@ -43,7 +43,21 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+.card_container {
+  padding: 20px;
+  .icon_b {
+    display: inline-block;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid #6b6868;
+    padding: 10px 15px;
+  }
+  .i_c {
+    padding: 0 3px;
+  }
+}
 .bc_bg {
+  background-color: #bcbcbc;
 }
 </style>

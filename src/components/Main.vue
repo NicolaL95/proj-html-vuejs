@@ -35,14 +35,66 @@
       </div>
     </div>
     <Card />
+
+    <div class="company_stat position-relative mt-5">
+      <div class="position-absolute img_rounder ir_t"></div>
+      <div class="abs_center position-absolute">
+        <CompInfo />
+      </div>
+      <img src="../assets/home.jpg" alt="Working Table" />
+      <div class="position-absolute img_rounder ir_b"></div>
+    </div>
+    <div class="info_desc">
+      <div class="container inf_size">
+        <h3 class="lg_text">Explore Recent Work</h3>
+        <div class="by mt-3 mb-3"></div>
+        <p class="lg_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sunt at
+          unde, atque consequuntur adipisci corporis eum dolorem blanditiis
+          maxime!
+        </p>
+      </div>
+    </div>
+    <div class="img_container container">
+      <div class="row">
+        <div class="col-4">
+          <img
+            class="w-100 img_size"
+            src="../assets/project1.jpg"
+            alt="Home image"
+          />
+        </div>
+        <div class="col-4">
+          <img
+            class="w-100 img_size"
+            src="../assets/project2.jpg"
+            alt="Home image"
+          />
+        </div>
+        <div class="col-4">
+          <img
+            class="w-100 img_size"
+            src="../assets/project3.jpg"
+            alt="Home image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="view_prog">
+      <div class="line"></div>
+      <p>VIEW ALL PROJECT</p>
+      <div class="line"></div>
+    </div>
   </div>
 </template>
 
 <script>
 import Card from "./Card.vue";
+import CompInfo from "./CompInfo.vue";
 export default {
   components: {
     Card,
+    CompInfo,
   },
   data() {
     return {};
@@ -54,7 +106,7 @@ export default {
 #main_container {
   .hero_image {
     img {
-      height: 800px;
+      height: 700px;
       width: 100%;
     }
 
@@ -110,6 +162,36 @@ export default {
       width: 33%;
       text-align: center;
     }
+  }
+  .company_stat {
+    .abs_center {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .img_rounder {
+      height: 100px;
+      background-color: white;
+      border-radius: 25%;
+
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .ir_t {
+      top: -30px;
+    }
+    .ir_b {
+      bottom: -30px;
+    }
+    img {
+      height: 600px;
+      width: 100%;
+    }
+  }
+  .img_size {
+    height: 300px;
   }
 }
 
