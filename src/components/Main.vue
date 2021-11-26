@@ -80,10 +80,31 @@
         </div>
       </div>
     </div>
-    <div class="view_prog">
-      <div class="line"></div>
-      <p>VIEW ALL PROJECT</p>
-      <div class="line"></div>
+    <div class="view_prog container mt-4 mb-5">
+      <div class="row align-items-center justify-content-center p_lr">
+        <div class="line col-4"></div>
+        <p class="col-4 m-0 text-center">VIEW ALL PROJECT</p>
+        <div class="line col-4"></div>
+      </div>
+    </div>
+    <div class="bg_g">
+      <div class="info_desc">
+        <div class="container inf_size">
+          <h3 class="lg_text">Our Core Values</h3>
+          <div class="by mt-3 mb-3"></div>
+          <p class="lg_text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sunt
+            at unde, atque consequuntur adipisci corporis eum dolorem blanditiis
+            maxime!
+          </p>
+        </div>
+      </div>
+      <div class="owners_stat position-relative mt-5">
+        <div class="position-absolute img_rounder_g ir_t"></div>
+        <div class="abs_center position-absolute"></div>
+        <img src="../assets/home-parallax.jpg" alt="Working Table" />
+        <div class="position-absolute img_rounder_g ir_b"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -190,13 +211,53 @@ export default {
       width: 100%;
     }
   }
+
+  /* images */
+
   .img_size {
     height: 300px;
   }
-}
+  /* VAP  */
+  .p_lr {
+    padding: 0 12px;
+    .line {
+      border: 1px solid #6b6868;
+      height: 1px;
+    }
+  }
+  .owners_stat {
+    .abs_center {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .img_rounder_g {
+      height: 100px;
+      background-color: lightgrey;
+      border-radius: 25%;
 
-/* UTILITY_MAIN */
-.white_b {
-  border: 1px solid white;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .ir_t {
+      top: -30px;
+    }
+    .ir_b {
+      bottom: -30px;
+    }
+    img {
+      height: 600px;
+      width: 100%;
+    }
+  }
+  /* UTILITY_MAIN */
+  .white_b {
+    border: 1px solid white;
+  }
+  .bg_g {
+    background-color: lightgray;
+  }
 }
 </style>
