@@ -18,12 +18,23 @@ export default {
 </script>
 
 <style lang="scss">
+/* BUTTONS */
 .quote_button {
   background-color: #fed23f;
-  color: #bcbcbc;
+  color: #6b6868;
+}
+
+.bw_button {
+  color: white;
+  background-color: #31312f;
 }
 
 .button_size {
   padding: 5px 30px;
+}
+
+/* text */
+.lg_text {
+  color: #6b6868;
 }
 </style>

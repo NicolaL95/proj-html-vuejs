@@ -48,7 +48,7 @@ export default {};
       width: 33%;
       a {
         text-decoration: none;
-        color: #bcbcbc;
+        color: #6b6868;
       }
     }
   }
