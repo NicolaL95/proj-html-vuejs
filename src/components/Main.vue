@@ -99,11 +99,96 @@
           </p>
         </div>
       </div>
+      <div class="comp_qualities">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 text-center">
+              <i class="fas fa-home bg_a qualities_size mb-3"></i>
+              <h5>Great Services</h5>
+              <div class="bb mt-3 mb-4"></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum eaque eius perspiciatis eligendi blanditiis id
+                repellendus. A minima tempore tenetur!
+              </p>
+            </div>
+            <div class="col-3 text-center">
+              <i class="fas fa-cog bg_b qualities_size mb-3"></i>
+              <h5>Great Services</h5>
+              <div class="bb mt-3 mb-4"></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum eaque eius perspiciatis eligendi blanditiis id
+                repellendus. A minima tempore tenetur!
+              </p>
+            </div>
+            <div class="col-3 text-center">
+              <i class="fas fa-users bg_o qualities_size mb-3"></i>
+              <h5>Great Services</h5>
+              <div class="bb mt-3 mb-4"></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum eaque eius perspiciatis eligendi blanditiis id
+                repellendus. A minima tempore tenetur!
+              </p>
+            </div>
+            <div class="col-3 text-center">
+              <i class="far fa-lightbulb bg_g qualities_size mb-3"></i>
+              <h5>Great Services</h5>
+              <div class="bb mt-3 mb-4"></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorum eaque eius perspiciatis eligendi blanditiis id
+                repellendus. A minima tempore tenetur!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="owners_stat position-relative mt-5">
         <div class="position-absolute img_rounder_g ir_t"></div>
-        <div class="abs_center position-absolute"></div>
+        <div class="abs_center position-absolute testimonial_container">
+          <h3>Our Home Owners Say</h3>
+          <div class="by"></div>
+          <img
+            class="rounded-circle testimonial_img my-4"
+            src="../assets/testimonial.jpg"
+            alt="testiimonial Image"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+            mollitia pariatur, corporis molestiae quia, quis voluptatibus
+            exercitationem quidem sapiente perferendis praesentium optio? Odio
+            consequuntur laborum alias minus. Cum blanditiis facilis esse
+            exercitationem! Quis, velit consequuntur?
+          </p>
+          <h5>HARRY SMITH - NEW HOEM OWNERS</h5>
+          <div class="testimonial_switch">
+            <i class="fas fa-circle"></i>
+            <i class="far fa-circle"></i>
+          </div>
+        </div>
         <img src="../assets/home-parallax.jpg" alt="Working Table" />
         <div class="position-absolute img_rounder_g ir_b"></div>
+      </div>
+      <div class="info_desc">
+        <div class="container inf_size">
+          <h3 class="lg_text">Lastest News</h3>
+          <div class="by mt-3 mb-3"></div>
+          <p class="lg_text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sunt
+            at unde, atque consequuntur adipisci corporis eum dolorem blanditiis
+            maxime!
+          </p>
+        </div>
+      </div>
+      <ImgInformation />
+      <div class="view_prog container mt-4 mb-5">
+        <div class="row align-items-center justify-content-center p_lr">
+          <div class="line col-4 border-white"></div>
+          <p class="col-4 m-0 text-center">VIEW ALL PROJECT</p>
+          <div class="line col-4 border-white"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -112,10 +197,12 @@
 <script>
 import Card from "./Card.vue";
 import CompInfo from "./CompInfo.vue";
+import ImgInformation from "./ImgInformation.vue";
 export default {
   components: {
     Card,
     CompInfo,
+    ImgInformation,
   },
   data() {
     return {};
@@ -174,11 +261,7 @@ export default {
   }
   .info_desc {
     padding: 75px 0 50px 0;
-    .by {
-      border: 1px solid #fed23f;
-      width: 250px;
-      margin: auto;
-    }
+
     .inf_size {
       width: 33%;
       text-align: center;
@@ -252,6 +335,67 @@ export default {
       width: 100%;
     }
   }
+  .comp_qualities {
+    .container {
+      .row {
+        .qualities_size {
+          font-size: 2.5rem;
+          border-radius: 50%;
+          padding: 15px;
+          color: white;
+        }
+
+        .bg_a {
+          background-color: #8faeb8;
+        }
+
+        .bg_b {
+          background-color: #6586b1;
+        }
+
+        .bg_o {
+          background-color: #fe6f1d;
+        }
+
+        .bg_g {
+          background-color: #7d9703;
+        }
+        .bb {
+          background-color: #31312f;
+          height: 2px;
+          width: 20px;
+          margin: auto;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  /* TESTIMONIAL */
+  .testimonial_container {
+    color: white;
+    .testimonial_img {
+      height: 130px !important;
+      width: 115px !important;
+    }
+    h5 {
+      font-weight: bold;
+    }
+    .testimonial_switch {
+      font-size: 0.8rem;
+      i:first-child {
+        padding-right: 5px;
+      }
+    }
+  }
+
+  /* REUSED COMPONENTS */
+  .by {
+    border: 1px solid #fed23f;
+    width: 250px;
+    margin: auto;
+  }
+
   /* UTILITY_MAIN */
   .white_b {
     border: 1px solid white;
