@@ -191,6 +191,44 @@
         </div>
       </div>
     </div>
+    <div class="info_desc">
+      <div class="container inf_size">
+        <h3 class="lg_text">Trusted Partners</h3>
+        <div class="by mt-3 mb-3"></div>
+        <p class="lg_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sunt at
+          unde, atque consequuntur adipisci corporis eum dolorem blanditiis
+          maxime!
+        </p>
+      </div>
+    </div>
+    <Partners></Partners>
+    <div class="CTA position-relative">
+      <img src="../assets/CTA.jpg" alt="Construction progress" />
+      <div class="position-absolute abs_center">
+        <div class="row align-items-center">
+          <div class="col-8">
+            <div class="info_desc text_left">
+              <div class="">
+                <h3 class="lg_text text-white">Trusted Partners</h3>
+                <div class="by my-3 mx-0"></div>
+                <p class="lg_text text-white">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
+                  sunt at unde, atque consequuntur adipisci corporis eum dolorem
+                  blanditiis maxime!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 text-white">
+            <button class="quote_button border-0 button_size">
+              GET A FREE QUOTE
+            </button>
+            <p class="minus_text">Only takes a few seconds!</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -198,11 +236,13 @@
 import Card from "./Card.vue";
 import CompInfo from "./CompInfo.vue";
 import ImgInformation from "./ImgInformation.vue";
+import Partners from "./Partners.vue";
 export default {
   components: {
     Card,
     CompInfo,
     ImgInformation,
+    Partners,
   },
   data() {
     return {};
@@ -268,12 +308,6 @@ export default {
     }
   }
   .company_stat {
-    .abs_center {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
     .img_rounder {
       height: 100px;
       background-color: white;
@@ -389,6 +423,16 @@ export default {
     }
   }
 
+  /* CALL TO ACTION */
+  .CTA {
+    background-color: #31312f;
+    padding-bottom: 10px;
+    img {
+      height: 600px;
+      width: 100%;
+    }
+  }
+
   /* REUSED COMPONENTS */
   .by {
     border: 1px solid #fed23f;
@@ -402,6 +446,9 @@ export default {
   }
   .bg_g {
     background-color: lightgray;
+  }
+  .text_left {
+    text-align: left;
   }
 }
 </style>
