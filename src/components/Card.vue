@@ -1,6 +1,6 @@
 <template>
   <div id="card_component">
-    <div class="container">
+    <div class="container mw_17">
       <div class="row">
         <div class="col-3" v-for="(card, index) in cardGenerator" :key="index">
           <div class="card_container text-center lg_text bc_bg">
