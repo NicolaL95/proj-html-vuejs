@@ -28,7 +28,10 @@ export default {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
+.no_abs_center {
+  top: 0;
+  left: 0;
+}
 /* Z-index */
 .z_index_over {
   position: relative;
