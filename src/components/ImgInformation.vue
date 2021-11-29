@@ -8,10 +8,11 @@
           :key="index"
         >
           <div class="bg-white">
-            <img
-              :src="require('../assets/' + infoGenerator[index].image + '.jpg')"
-              :alt="infoGenerator[index].image"
-            />
+            <HoveredImage
+              :path="infoGenerator[index].image + '.jpg'"
+              :title="infoGenerator[index].title"
+              :subtitle="'Architecturre, Construction, Marketing'"
+            ></HoveredImage>
             <div class="info_text">
               <h5 class="mt-3">{{ infoGenerator[index].title }}</h5>
               <p class="date">December 7th,2015</p>
@@ -30,7 +31,11 @@
 </template>
 
 <script>
+import HoveredImage from "./HoveredImage.vue";
 export default {
+  components: {
+    HoveredImage,
+  },
   data() {
     return {
       infoGenerator: [
