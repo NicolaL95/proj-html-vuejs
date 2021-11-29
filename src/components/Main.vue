@@ -23,17 +23,7 @@
         <button class="bw_button free_quote">GET A FREE QUOTE</button>
       </div>
     </div>
-    <div class="info_desc">
-      <div class="container inf_size">
-        <h3 class="lg_text">Specialist in Modern Construction</h3>
-        <div class="by mt-3 mb-3"></div>
-        <p class="lg_text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sunt at
-          unde, atque consequuntur adipisci corporis eum dolorem blanditiis
-          maxime!
-        </p>
-      </div>
-    </div>
+    <InfoBox :title="'Specialist in Modern Construction'"></InfoBox>
     <Card />
 
     <div class="company_stat position-relative mt-5">
@@ -44,59 +34,29 @@
       <img src="../assets/home.jpg" alt="Working Table" />
       <div class="position-absolute img_rounder ir_b"></div>
     </div>
-    <div class="info_desc">
-      <div class="container inf_size">
-        <h3 class="lg_text">Explore Recent Work</h3>
-        <div class="by mt-3 mb-3"></div>
-        <p class="lg_text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sunt at
-          unde, atque consequuntur adipisci corporis eum dolorem blanditiis
-          maxime!
-        </p>
-      </div>
-    </div>
+    <InfoBox :title="'Explore Recent Work'"></InfoBox>
     <div class="img_container container">
       <div class="row">
-        <div class="col-4 position-relative">
-          <div class="bg_gold">
-            <img
-              class="w-100 img_size"
-              src="../assets/project1.jpg"
-              alt="Home image"
-            />
-            <div class="backdrop_image abs_center position-absolute w-100">
-              <div class="icons_hovered">
-                <i class="fas fa-link rounded-circle"></i>
-                <i class="fas fa-search rounded-circle"></i>
-                <h5>Florida Heath Facility</h5>
-                <p>Commerial</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 position-relative">
-          <div class="bg_gold">
-            <img
-              class="w-100 img_size"
-              src="../assets/project2.jpg"
-              alt="Home image"
-            />
-            <div class="backdrop_image abs_center position-absolute w-100">
-              <div class="icons_hovered">
-                <i class="fas fa-link rounded-circle"></i>
-                <i class="fas fa-search rounded-circle"></i>
-                <h5>Florida Heath Facility</h5>
-                <p>Commerial</p>
-              </div>
-            </div>
-          </div>
+        <div class="col-4">
+          <HoveredImage
+            :path="'project1.jpg'"
+            :title="'Florida Heath Facility'"
+            :subtitle="'Commercial'"
+          ></HoveredImage>
         </div>
         <div class="col-4">
-          <img
-            class="w-100 img_size"
-            src="../assets/project3.jpg"
-            alt="Home image"
-          />
+          <HoveredImage
+            :path="'project2.jpg'"
+            :title="'Maine Modernity'"
+            :subtitle="'Residential'"
+          ></HoveredImage>
+        </div>
+        <div class="col-4">
+          <HoveredImage
+            :path="'project3.jpg'"
+            :title="'Exclusive Urban Living'"
+            :subtitle="'Commercial'"
+          ></HoveredImage>
         </div>
       </div>
     </div>
@@ -108,17 +68,7 @@
       </div>
     </div>
     <div class="bg_g">
-      <div class="info_desc">
-        <div class="container inf_size">
-          <h3 class="lg_text">Our Core Values</h3>
-          <div class="by mt-3 mb-3"></div>
-          <p class="lg_text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sunt
-            at unde, atque consequuntur adipisci corporis eum dolorem blanditiis
-            maxime!
-          </p>
-        </div>
-      </div>
+      <InfoBox :title="'Our Core Values'"></InfoBox>
       <div class="comp_qualities">
         <div class="container">
           <div class="row">
@@ -191,17 +141,7 @@
         <img src="../assets/home-parallax.jpg" alt="Working Table" />
         <div class="position-absolute img_rounder_g ir_b"></div>
       </div>
-      <div class="info_desc">
-        <div class="container inf_size">
-          <h3 class="lg_text">Lastest News</h3>
-          <div class="by mt-3 mb-3"></div>
-          <p class="lg_text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sunt
-            at unde, atque consequuntur adipisci corporis eum dolorem blanditiis
-            maxime!
-          </p>
-        </div>
-      </div>
+      <InfoBox :title="'Lastest News'"></InfoBox>
       <ImgInformation />
       <div class="view_prog container mt-4 mb-5">
         <div class="row align-items-center justify-content-center p_lr">
@@ -211,17 +151,7 @@
         </div>
       </div>
     </div>
-    <div class="info_desc">
-      <div class="container inf_size">
-        <h3 class="lg_text">Trusted Partners</h3>
-        <div class="by mt-3 mb-3"></div>
-        <p class="lg_text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sunt at
-          unde, atque consequuntur adipisci corporis eum dolorem blanditiis
-          maxime!
-        </p>
-      </div>
-    </div>
+    <InfoBox :title="'Trusted Partners'"></InfoBox>
     <Partners></Partners>
     <div class="CTA position-relative">
       <img src="../assets/CTA.jpg" alt="Construction progress" />
@@ -257,12 +187,16 @@ import Card from "./Card.vue";
 import CompInfo from "./CompInfo.vue";
 import ImgInformation from "./ImgInformation.vue";
 import Partners from "./Partners.vue";
+import InfoBox from "./InfoBox.vue";
+import HoveredImage from "./HoveredImage.vue";
 export default {
   components: {
     Card,
     CompInfo,
     ImgInformation,
     Partners,
+    InfoBox,
+    HoveredImage,
   },
   data() {
     return {};
@@ -321,11 +255,6 @@ export default {
   }
   .info_desc {
     padding: 75px 0 50px 0;
-
-    .inf_size {
-      width: 33%;
-      text-align: center;
-    }
   }
   .company_stat {
     .img_rounder {
@@ -472,29 +401,5 @@ export default {
   }
 
   /* HOVER */
-  .bg_gold {
-    background-color: #fed23f;
-  }
-  .backdrop_image {
-    visibility: hidden;
-    .icons_hovered {
-      i {
-        color: #fed23f;
-        padding: 10px;
-        background-color: white;
-        margin-left: 12px;
-      }
-    }
-    p,
-    h5 {
-      color: white;
-    }
-  }
-  .img_container:hover img {
-    visibility: hidden;
-  }
-  .img_container:hover .backdrop_image {
-    visibility: visible;
-  }
 }
 </style>
