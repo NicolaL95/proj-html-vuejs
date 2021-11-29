@@ -140,6 +140,8 @@ export default {};
       }
       .titles_footer {
         color: #fed23f;
+        font-weight: bold;
+        margin-bottom: 30px;
       }
       .logo_footer {
         padding: 30px 0;
@@ -149,7 +151,7 @@ export default {};
         margin-right: 10px;
       }
       .wp_engine {
-        height: 290px;
+        height: 200px;
         padding-left: 45px;
       }
       .icon_w {

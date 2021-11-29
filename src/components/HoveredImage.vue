@@ -1,10 +1,6 @@
 <template>
   <div class="bg_gold position-relative">
-    <img
-      class="w-100 img_size"
-      :src="require('../assets/' + path)"
-      alt="Home image"
-    />
+    <img class="w-100" :src="require('../assets/' + path)" alt="Home image" />
     <div class="backdrop_image abs_center position-absolute w-100">
       <div class="icons_hovered">
         <i class="fas fa-link rounded-circle"></i>
@@ -37,7 +33,9 @@ export default {
       color: #fed23f;
       padding: 10px;
       background-color: white;
-      margin-left: 12px;
+    }
+    i:first-child {
+      margin-right: 12px;
     }
   }
   p,

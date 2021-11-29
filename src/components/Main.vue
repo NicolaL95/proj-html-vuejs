@@ -78,38 +78,34 @@
               <div class="bb mt-3 mb-4"></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolorum eaque eius perspiciatis eligendi blanditiis id
-                repellendus. A minima tempore tenetur!
+                Dolorum eaque.
               </p>
             </div>
             <div class="col-3 text-center">
               <i class="fas fa-cog bg_b qualities_size mb-3"></i>
-              <h5>Great Services</h5>
+              <h5>Highest Standards</h5>
               <div class="bb mt-3 mb-4"></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolorum eaque eius perspiciatis eligendi blanditiis id
-                repellendus. A minima tempore tenetur!
+                Dolorum eaque.
               </p>
             </div>
             <div class="col-3 text-center">
               <i class="fas fa-users bg_o qualities_size mb-3"></i>
-              <h5>Great Services</h5>
+              <h5>Professional Team</h5>
               <div class="bb mt-3 mb-4"></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolorum eaque eius perspiciatis eligendi blanditiis id
-                repellendus. A minima tempore tenetur!
+                Dolorum eaque.
               </p>
             </div>
             <div class="col-3 text-center">
               <i class="far fa-lightbulb bg_g qualities_size mb-3"></i>
-              <h5>Great Services</h5>
+              <h5>Creative Solutions</h5>
               <div class="bb mt-3 mb-4"></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolorum eaque eius perspiciatis eligendi blanditiis id
-                repellendus. A minima tempore tenetur!
+                Dolorum eaque.
               </p>
             </div>
           </div>
@@ -146,7 +142,7 @@
       <div class="view_prog container mt-4 mb-5">
         <div class="row align-items-center justify-content-center p_lr">
           <div class="line col-4 border-white"></div>
-          <p class="col-4 m-0 text-center">VIEW ALL PROJECT</p>
+          <p class="col-4 m-0 text-center">VIEW ALL ARTICLES</p>
           <div class="line col-4 border-white"></div>
         </div>
       </div>
@@ -160,7 +156,7 @@
           <div class="col-8">
             <div class="info_desc text_left">
               <div class="">
-                <h3 class="lg_text text-white">Trusted Partners</h3>
+                <h3 class="lg_text text-white text_b">Trusted Partners</h3>
                 <div class="by my-3 mx-0"></div>
                 <p class="lg_text text-white">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse
@@ -171,7 +167,7 @@
             </div>
           </div>
           <div class="col-4 text-white">
-            <button class="quote_button border-0 button_size">
+            <button class="quote_button border-0 button_size button_size_b">
               GET A FREE QUOTE
             </button>
             <p class="minus_text">Only takes a few seconds!</p>
@@ -285,10 +281,17 @@ export default {
     height: 300px;
   }
   /* VAP  */
+  .p_lr_b {
+    margin-bottom: 0;
+    padding-bottom: 120px;
+  }
   .p_lr {
     padding: 0 12px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+
     .line {
-      border: 1px solid #6b6868;
+      border: 1px solid #eeeeee;
       height: 1px;
     }
   }
@@ -300,8 +303,8 @@ export default {
       text-align: center;
     }
     .img_rounder_g {
-      height: 100px;
-      background-color: lightgrey;
+      height: 200px;
+      background-color: #eeeeee;
       border-radius: 25%;
 
       margin: 0;
@@ -309,13 +312,13 @@ export default {
       width: 100%;
     }
     .ir_t {
-      top: -30px;
+      top: -50px;
     }
     .ir_b {
-      bottom: -30px;
+      bottom: -50px;
     }
     img {
-      height: 600px;
+      height: 800px;
       width: 100%;
     }
   }
@@ -323,10 +326,12 @@ export default {
     .container {
       .row {
         .qualities_size {
-          font-size: 2.5rem;
+          font-size: 4rem;
           border-radius: 50%;
-          padding: 15px;
           color: white;
+          width: 120px;
+          height: 120px;
+          line-height: 120px;
         }
 
         .bg_a {
@@ -368,7 +373,7 @@ export default {
     .testimonial_switch {
       font-size: 0.8rem;
       i:first-child {
-        padding-right: 5px;
+        padding-right: 10px;
       }
     }
   }
@@ -395,7 +400,8 @@ export default {
     border: 1px solid white;
   }
   .bg_g {
-    background-color: lightgray;
+    background-color: #eeeeee;
+    padding-bottom: 10px;
   }
   .text_left {
     text-align: left;

@@ -50,17 +50,21 @@ export default {
 };
 </script>
 <style lang="scss">
+.container {
+  width: 1700px !important;
+}
 .info_container {
   .info_i_size {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .info_color {
     color: #fed23f;
   }
   .info_title {
     color: white;
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 100%;
+    font-weight: bold;
   }
 }
 </style>

@@ -73,7 +73,7 @@ export default {
       font-size: 0.8rem;
     }
     .line {
-      background-color: #6b6868;
+      background-color: #eeeeee;
       height: 1px;
     }
   }

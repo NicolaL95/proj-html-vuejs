@@ -1,9 +1,9 @@
 <template>
-  <div id="card_component" class="z_index_over">
+  <div id="card_component">
     <div class="container mw_17">
       <div class="row">
         <div class="col-3" v-for="(card, index) in cardGenerator" :key="index">
-          <div class="card_container text-center position-relative">
+          <div class="card_container text-center position-relative b_rounded">
             <div
               class="
                 card_container_frontdrop
@@ -78,6 +78,9 @@ export default {
 </script>
 
 <style lang="scss">
+.b_rounded {
+  border-radius: 10px;
+}
 .card_container {
   width: 350px;
   height: 300px;
@@ -89,8 +92,7 @@ export default {
   .s_text {
     color: #666665;
   }
-  .card_container_frontdrop {
-  }
+
   h4 {
     color: black;
     font-size: 1.8rem;

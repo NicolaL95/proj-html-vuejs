@@ -1,5 +1,5 @@
 <template>
-  <div id="parterns_container">
+  <div id="parterns_container" class="mb-5">
     <div class="container">
       <div class="row">
         <img

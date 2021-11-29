@@ -72,6 +72,10 @@ export default {
 .minus_text {
   font-size: 0.8rem;
 }
+
+.text_b {
+  font-size: 2.5rem;
+}
 /* SIZE */
 .mw_17 {
   max-width: 1700px !important;
