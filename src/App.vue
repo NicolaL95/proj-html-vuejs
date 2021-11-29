@@ -29,6 +29,12 @@ export default {
   text-align: center;
 }
 
+/* Z-index */
+.z_index_over {
+  position: relative;
+  z-index: 2;
+}
+
 /* BUTTONS */
 #app {
   font-family: "Montserrat", sans-serif;
@@ -53,6 +59,10 @@ export default {
 
 .button_size {
   padding: 10px 40px;
+}
+
+.button_size_b {
+  font-size: 1.3rem;
 }
 
 /* TEXT */

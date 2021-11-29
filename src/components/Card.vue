@@ -1,5 +1,5 @@
 <template>
-  <div id="card_component">
+  <div id="card_component" class="z_index_over">
     <div class="container mw_17">
       <div class="row">
         <div class="col-3" v-for="(card, index) in cardGenerator" :key="index">
@@ -7,11 +7,12 @@
             <div
               class="
                 card_container_frontdrop
-                lg_text
+                s_text
                 w-100
                 h-100
                 position-absolute
                 abs_center
+                p_40_20
               "
             >
               <div class="icon_b">
@@ -23,7 +24,16 @@
                 ratione amet aspernatur dolore. Quibusdam, fugiat.
               </p>
             </div>
-            <div class="card_container_backdrop position-absolute abs_center">
+            <div
+              class="
+                card_container_backdrop
+                position-absolute
+                w-100
+                h-100
+                abs_center
+                p_40_20
+              "
+            >
               <h5>{{ cardGenerator[index].backTitle }}</h5>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
@@ -72,10 +82,22 @@ export default {
   width: 350px;
   height: 300px;
   padding: 20px;
-  background-color: #bcbcbc;
+  background-color: #eeeeee;
+  .p_40_20 {
+    padding: 50px 20px 40px;
+  }
+  .s_text {
+    color: #666665;
+  }
+  .card_container_frontdrop {
+  }
+  h4 {
+    color: black;
+    font-size: 1.8rem;
+  }
   .icon_b {
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     border-radius: 50%;
     border: 1px solid #6b6868;
     padding: 10px 15px;

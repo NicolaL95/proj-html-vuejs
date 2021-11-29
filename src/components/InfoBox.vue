@@ -1,7 +1,7 @@
 <template>
   <div class="info_desc">
     <div class="container inf_size">
-      <h3 class="lg_text">{{ title }}</h3>
+      <h3>{{ title }}</h3>
       <div class="by mt-3 mb-3"></div>
       <p class="lg_text">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sunt at
@@ -18,9 +18,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .inf_size {
   width: 33%;
   text-align: center;
+  h3 {
+    color: black;
+  }
 }
 </style>

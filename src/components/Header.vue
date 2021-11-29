@@ -41,15 +41,22 @@ export default {};
 #header_container {
   .header_flex {
     padding: 0 100px;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0px 0px 10px grey;
+    height: 115px;
     img {
       height: 65px;
     }
     .header_navigator {
-      width: 33%;
+      width: 650px;
       a {
         text-decoration: none;
         color: #6b6868;
         transition: color 0.2s;
+        font-size: 0.9rem;
       }
       /* HOVER */
       a:hover {

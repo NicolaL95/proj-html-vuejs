@@ -8,10 +8,10 @@
           We Build Inspiring Residential &#38; Commercial Spaces
         </p>
         <div class="title_button d-flex justify-content-center">
-          <button class="bw_button border-0 button_size">
+          <button class="bw_button border-0 button_size button_size_b">
             EXPLORE RECENT WORK
           </button>
-          <button class="quote_button border-0 button_size">
+          <button class="quote_button border-0 button_size button_size_b">
             GET A QUOTE TODAY
           </button>
         </div>
@@ -207,8 +207,9 @@ export default {
 <style lang="scss">
 #main_container {
   .hero_image {
+    padding-top: 115px;
     img {
-      height: 700px;
+      height: 900px;
       width: 100%;
     }
 
@@ -220,12 +221,12 @@ export default {
 
       h1 {
         color: white;
-        font-size: 3rem;
+        font-size: 3.5rem;
       }
 
       p {
         color: #fed23f;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
       }
 
       .title_button {
@@ -239,14 +240,14 @@ export default {
     text-align: center;
 
     p {
-      padding: 30px;
-      font-size: 1.5rem;
+      padding: 40px;
+      font-size: 2rem;
       color: #1e1e1e;
     }
     .fq_b {
       top: 50%;
       left: 50%;
-      transform: translate(-50%, 75%);
+      transform: translate(-50%, 120%);
     }
     .free_quote {
       border: 1px solid black;
@@ -258,7 +259,7 @@ export default {
   }
   .company_stat {
     .img_rounder {
-      height: 100px;
+      height: 200px;
       background-color: white;
       border-radius: 25%;
 
@@ -267,13 +268,13 @@ export default {
       width: 100%;
     }
     .ir_t {
-      top: -30px;
+      top: -50px;
     }
     .ir_b {
-      bottom: -30px;
+      bottom: -50px;
     }
     img {
-      height: 600px;
+      height: 800px;
       width: 100%;
     }
   }
