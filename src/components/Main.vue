@@ -57,19 +57,39 @@
     </div>
     <div class="img_container container">
       <div class="row">
-        <div class="col-4">
-          <img
-            class="w-100 img_size"
-            src="../assets/project1.jpg"
-            alt="Home image"
-          />
+        <div class="col-4 position-relative">
+          <div class="bg_gold">
+            <img
+              class="w-100 img_size"
+              src="../assets/project1.jpg"
+              alt="Home image"
+            />
+            <div class="backdrop_image abs_center position-absolute w-100">
+              <div class="icons_hovered">
+                <i class="fas fa-link rounded-circle"></i>
+                <i class="fas fa-search rounded-circle"></i>
+                <h5>Florida Heath Facility</h5>
+                <p>Commerial</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-4">
-          <img
-            class="w-100 img_size"
-            src="../assets/project2.jpg"
-            alt="Home image"
-          />
+        <div class="col-4 position-relative">
+          <div class="bg_gold">
+            <img
+              class="w-100 img_size"
+              src="../assets/project2.jpg"
+              alt="Home image"
+            />
+            <div class="backdrop_image abs_center position-absolute w-100">
+              <div class="icons_hovered">
+                <i class="fas fa-link rounded-circle"></i>
+                <i class="fas fa-search rounded-circle"></i>
+                <h5>Florida Heath Facility</h5>
+                <p>Commerial</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-4">
           <img
@@ -449,6 +469,32 @@ export default {
   }
   .text_left {
     text-align: left;
+  }
+
+  /* HOVER */
+  .bg_gold {
+    background-color: #fed23f;
+  }
+  .backdrop_image {
+    visibility: hidden;
+    .icons_hovered {
+      i {
+        color: #fed23f;
+        padding: 10px;
+        background-color: white;
+        margin-left: 12px;
+      }
+    }
+    p,
+    h5 {
+      color: white;
+    }
+  }
+  .img_container:hover img {
+    visibility: hidden;
+  }
+  .img_container:hover .backdrop_image {
+    visibility: visible;
   }
 }
 </style>

@@ -3,15 +3,36 @@
     <div class="container mw_17">
       <div class="row">
         <div class="col-3" v-for="(card, index) in cardGenerator" :key="index">
-          <div class="card_container text-center lg_text bc_bg">
-            <div class="icon_b">
-              <i :class="cardGenerator[index].icon"></i>
+          <div class="card_container text-center position-relative">
+            <div
+              class="
+                card_container_frontdrop
+                lg_text
+                w-100
+                h-100
+                position-absolute
+                abs_center
+              "
+            >
+              <div class="icon_b">
+                <i :class="cardGenerator[index].icon"></i>
+              </div>
+              <h4 class="mt-2">{{ cardGenerator[index].name }}</h4>
+              <p class="m-0">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                ratione amet aspernatur dolore. Quibusdam, fugiat.
+              </p>
             </div>
-            <h4 class="mt-2">{{ cardGenerator[index].name }}</h4>
-            <p class="m-0">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
-              ratione amet aspernatur dolore. Quibusdam, fugiat.
-            </p>
+            <div class="card_container_backdrop position-absolute abs_center">
+              <h5>{{ cardGenerator[index].backTitle }}</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                ratione amet aspernatur dolore. Quibusdam, fugiat.
+              </p>
+              <button class="border-0 quote_button_l button_size">
+                GET QUOTE
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -27,15 +48,18 @@ export default {
         {
           icon: "far fa-building i_c",
           name: "Buildings",
+          backTitle: "ARTFULLY CRAFTED",
         },
-        { icon: "fas fa-sync-alt", name: "Renovate" },
+        { icon: "fas fa-sync-alt", name: "Renovate", backTitle: "FRESHLY NEW" },
         {
           icon: "fas fa-home",
           name: "Construct",
+          backTitle: "PERFECT LINES",
         },
         {
           icon: "fas fa-truck",
           name: "Exclusive",
+          backTitle: "PLANNING",
         },
       ],
     };
@@ -45,7 +69,10 @@ export default {
 
 <style lang="scss">
 .card_container {
+  width: 350px;
+  height: 300px;
   padding: 20px;
+  background-color: #bcbcbc;
   .icon_b {
     display: inline-block;
     font-size: 1.3rem;
@@ -57,7 +84,22 @@ export default {
     padding: 0 3px;
   }
 }
-.bc_bg {
-  background-color: #bcbcbc;
+/* BACKDROP CARD */
+.card_container_backdrop {
+  visibility: hidden;
+}
+
+/* HOVER */
+
+.card_container:hover {
+  background-color: #fed23f;
+}
+
+.card_container:hover > .card_container_frontdrop {
+  visibility: hidden;
+}
+
+.card_container:hover > .card_container_backdrop {
+  visibility: visible;
 }
 </style>

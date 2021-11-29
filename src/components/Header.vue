@@ -49,6 +49,11 @@ export default {};
       a {
         text-decoration: none;
         color: #6b6868;
+        transition: color 0.2s;
+      }
+      /* HOVER */
+      a:hover {
+        color: #fed23f;
       }
     }
   }
