@@ -11,7 +11,7 @@
             <HoveredImage
               :path="infoGenerator[index].image + '.jpg'"
               :title="infoGenerator[index].title"
-              :subtitle="'Architecturre, Construction, Marketing'"
+              :subtitle="infoGenerator[index].subtitle"
             ></HoveredImage>
             <div class="info_text">
               <h5 class="mt-3">{{ infoGenerator[index].title }}</h5>
@@ -42,14 +42,17 @@ export default {
         {
           image: "blog-post1",
           title: "Redeveloping Florida's Remote Southern Coast",
+          subtitle: "Architecturre, Construction, Marketing",
         },
         {
           image: "blog-post2",
           title: "How We Manage Large Construction Projects",
+          subtitle: "Architecturre, Construction, Engineering",
         },
         {
           image: "blog-post3",
           title: "Future prooofing a modern home",
+          subtitle: "Architecturre, Construction, Marketing",
         },
       ],
     };

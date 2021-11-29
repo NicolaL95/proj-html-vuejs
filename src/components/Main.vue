@@ -74,7 +74,7 @@
           <div class="row">
             <div class="col-3 text-center">
               <i class="fas fa-home bg_a qualities_size mb-3"></i>
-              <h5>Great Services</h5>
+              <h5 class="qualities_title">Great Services</h5>
               <div class="bb mt-3 mb-4"></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -83,7 +83,7 @@
             </div>
             <div class="col-3 text-center">
               <i class="fas fa-cog bg_b qualities_size mb-3"></i>
-              <h5>Highest Standards</h5>
+              <h5 class="qualities_title">Highest Standards</h5>
               <div class="bb mt-3 mb-4"></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -92,7 +92,7 @@
             </div>
             <div class="col-3 text-center">
               <i class="fas fa-users bg_o qualities_size mb-3"></i>
-              <h5>Professional Team</h5>
+              <h5 class="qualities_title">Professional Team</h5>
               <div class="bb mt-3 mb-4"></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -101,7 +101,7 @@
             </div>
             <div class="col-3 text-center">
               <i class="far fa-lightbulb bg_g qualities_size mb-3"></i>
-              <h5>Creative Solutions</h5>
+              <h5 class="qualities_title">Creative Solutions</h5>
               <div class="bb mt-3 mb-4"></div>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -128,7 +128,7 @@
             consequuntur laborum alias minus. Cum blanditiis facilis esse
             exercitationem! Quis, velit consequuntur?
           </p>
-          <h5>HARRY SMITH - NEW HOEM OWNERS</h5>
+          <h5>HARRY SMITH - NEW HOME OWNERS</h5>
           <div class="testimonial_switch">
             <i class="fas fa-circle"></i>
             <i class="far fa-circle"></i>
@@ -230,7 +230,7 @@ export default {
       }
     }
   }
-
+  /* PROJECT_HELP */
   .project_help {
     background-color: #fed23f;
     text-align: center;
@@ -253,6 +253,8 @@ export default {
   .info_desc {
     padding: 75px 0 50px 0;
   }
+
+  /* COMPANY_STAT */
   .company_stat {
     .img_rounder {
       height: 200px;
@@ -275,7 +277,7 @@ export default {
     }
   }
 
-  /* images */
+  /* IMAGES */
 
   .img_size {
     height: 300px;
@@ -295,6 +297,7 @@ export default {
       height: 1px;
     }
   }
+  /* OWNERS_STAT */
   .owners_stat {
     .abs_center {
       top: 50%;
@@ -322,6 +325,8 @@ export default {
       width: 100%;
     }
   }
+
+  /* COMP_QUALITIES */
   .comp_qualities {
     .container {
       .row {
@@ -336,6 +341,13 @@ export default {
 
         .bg_a {
           background-color: #8faeb8;
+        }
+
+        .qualities_size:hover {
+          background-color: #fed23f;
+        }
+        .qualities_size:hover + .qualities_title {
+          color: #fed23f;
         }
 
         .bg_b {
